@@ -432,7 +432,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--snow); outl
     } else {
       if (!drag) {
         var before = yaw;
-        yaw += yawV * dt; yawV *= Math.pow(0.04, dt);
+        yaw += yawV * dt; yawV *= Math.pow(0.04, dt); 
         if (auto && Math.abs(yawV) < 40) yaw += 68 * dt;
         shift = -(yaw - before) * panoS;
       } else { shift = pendingShift; pendingShift = 0; }
